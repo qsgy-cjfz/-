@@ -1,0 +1,5 @@
+/home/qsgy/workspace/qsgy/build/CMakeFiles/qsgy.dir
+/home/qsgy/workspace/qsgy/build/CMakeFiles/test.dir
+/home/qsgy/workspace/qsgy/build/CMakeFiles/test_config.dir
+/home/qsgy/workspace/qsgy/build/CMakeFiles/edit_cache.dir
+/home/qsgy/workspace/qsgy/build/CMakeFiles/rebuild_cache.dir
