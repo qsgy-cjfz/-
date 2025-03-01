@@ -1,12 +1,13 @@
 #include "qsgy/config.h"
 #include "qsgy/log.h"
 #include <yaml-cpp/yaml.h>
+#include <iostream>
 
 qsgy::ConfigVar<int>::ptr g_int_value_config = 
 	qsgy::Config::Lookup("system.port", (int)8080, "system port");
 
-//qsgy::ConfigVar<float>::ptr g_int_float_value_config = 
-//	qsgy::Config::Lookup("system.port", (float)8080, "system port");
+qsgy::ConfigVar<float>::ptr g_int_valuex_config = 
+	qsgy::Config::Lookup("system.port", (float)8080, "system port");
 
 qsgy::ConfigVar<float>::ptr g_float_value_config = 
 	qsgy::Config::Lookup("system.value", (float)10.2f, "system value");
@@ -192,9 +193,27 @@ void test_class(){
 	QSGY_LOG_INFO(QSGY_LOG_ROOT()) << g_person_vec_map->toString();
 }
 
+void test_log(){
+	static qsgy::Logger::ptr system_log = QSGY_LOG_NAME("system");
+	QSGY_LOG_INFO(system_log) << "hello1 system" << std::endl;
+	std::cout << qsgy::LoggerMgr::GetInstance()->toYamlString() << std::endl;
+	YAML::Node root = YAML::LoadFile("/home/qsgy/workspace/qsgy/bin/conf/log.yml");
+	qsgy::Config::LoadFromYaml(root);
+	std::cout << "=======================" << std::endl;
+	std::cout << qsgy::LoggerMgr::GetInstance()->toYamlString() << std::endl;
+	std::cout << "======================" << std::endl;
+	std::cout << root << std::endl;
+	QSGY_LOG_INFO(system_log) << "hello2 system" << std::endl;
+
+	system_log->setFormatter("%d - %m%n");
+	QSGY_LOG_INFO(system_log) << "hello3 system" << std::endl;
+}
+
+
 int main(int arg, char** args) {
 //	test_config();	
 //	test_yaml();
-	test_class();
+//	test_class();
+	test_log();
 	return 0;
 }

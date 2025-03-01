@@ -76,43 +76,43 @@ CMakeFiles/qsgy.dir/qsgy/log.cc.o: CMakeFiles/qsgy.dir/flags.make
 CMakeFiles/qsgy.dir/qsgy/log.cc.o: /home/qsgy/workspace/qsgy/qsgy/log.cc
 CMakeFiles/qsgy.dir/qsgy/log.cc.o: CMakeFiles/qsgy.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qsgy/workspace/qsgy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/qsgy.dir/qsgy/log.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsgy.dir/qsgy/log.cc.o -MF CMakeFiles/qsgy.dir/qsgy/log.cc.o.d -o CMakeFiles/qsgy.dir/qsgy/log.cc.o -c /home/qsgy/workspace/qsgy/qsgy/log.cc
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"qsgy/log.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsgy.dir/qsgy/log.cc.o -MF CMakeFiles/qsgy.dir/qsgy/log.cc.o.d -o CMakeFiles/qsgy.dir/qsgy/log.cc.o -c /home/qsgy/workspace/qsgy/qsgy/log.cc
 
 CMakeFiles/qsgy.dir/qsgy/log.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsgy.dir/qsgy/log.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qsgy/workspace/qsgy/qsgy/log.cc > CMakeFiles/qsgy.dir/qsgy/log.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"qsgy/log.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qsgy/workspace/qsgy/qsgy/log.cc > CMakeFiles/qsgy.dir/qsgy/log.cc.i
 
 CMakeFiles/qsgy.dir/qsgy/log.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsgy.dir/qsgy/log.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qsgy/workspace/qsgy/qsgy/log.cc -o CMakeFiles/qsgy.dir/qsgy/log.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"qsgy/log.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qsgy/workspace/qsgy/qsgy/log.cc -o CMakeFiles/qsgy.dir/qsgy/log.cc.s
 
 CMakeFiles/qsgy.dir/qsgy/util.cc.o: CMakeFiles/qsgy.dir/flags.make
 CMakeFiles/qsgy.dir/qsgy/util.cc.o: /home/qsgy/workspace/qsgy/qsgy/util.cc
 CMakeFiles/qsgy.dir/qsgy/util.cc.o: CMakeFiles/qsgy.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qsgy/workspace/qsgy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/qsgy.dir/qsgy/util.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsgy.dir/qsgy/util.cc.o -MF CMakeFiles/qsgy.dir/qsgy/util.cc.o.d -o CMakeFiles/qsgy.dir/qsgy/util.cc.o -c /home/qsgy/workspace/qsgy/qsgy/util.cc
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"qsgy/util.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsgy.dir/qsgy/util.cc.o -MF CMakeFiles/qsgy.dir/qsgy/util.cc.o.d -o CMakeFiles/qsgy.dir/qsgy/util.cc.o -c /home/qsgy/workspace/qsgy/qsgy/util.cc
 
 CMakeFiles/qsgy.dir/qsgy/util.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsgy.dir/qsgy/util.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qsgy/workspace/qsgy/qsgy/util.cc > CMakeFiles/qsgy.dir/qsgy/util.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"qsgy/util.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qsgy/workspace/qsgy/qsgy/util.cc > CMakeFiles/qsgy.dir/qsgy/util.cc.i
 
 CMakeFiles/qsgy.dir/qsgy/util.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsgy.dir/qsgy/util.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qsgy/workspace/qsgy/qsgy/util.cc -o CMakeFiles/qsgy.dir/qsgy/util.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"qsgy/util.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qsgy/workspace/qsgy/qsgy/util.cc -o CMakeFiles/qsgy.dir/qsgy/util.cc.s
 
 CMakeFiles/qsgy.dir/qsgy/config.cc.o: CMakeFiles/qsgy.dir/flags.make
 CMakeFiles/qsgy.dir/qsgy/config.cc.o: /home/qsgy/workspace/qsgy/qsgy/config.cc
 CMakeFiles/qsgy.dir/qsgy/config.cc.o: CMakeFiles/qsgy.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/qsgy/workspace/qsgy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/qsgy.dir/qsgy/config.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsgy.dir/qsgy/config.cc.o -MF CMakeFiles/qsgy.dir/qsgy/config.cc.o.d -o CMakeFiles/qsgy.dir/qsgy/config.cc.o -c /home/qsgy/workspace/qsgy/qsgy/config.cc
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"qsgy/config.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qsgy.dir/qsgy/config.cc.o -MF CMakeFiles/qsgy.dir/qsgy/config.cc.o.d -o CMakeFiles/qsgy.dir/qsgy/config.cc.o -c /home/qsgy/workspace/qsgy/qsgy/config.cc
 
 CMakeFiles/qsgy.dir/qsgy/config.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qsgy.dir/qsgy/config.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qsgy/workspace/qsgy/qsgy/config.cc > CMakeFiles/qsgy.dir/qsgy/config.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"qsgy/config.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/qsgy/workspace/qsgy/qsgy/config.cc > CMakeFiles/qsgy.dir/qsgy/config.cc.i
 
 CMakeFiles/qsgy.dir/qsgy/config.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qsgy.dir/qsgy/config.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qsgy/workspace/qsgy/qsgy/config.cc -o CMakeFiles/qsgy.dir/qsgy/config.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"qsgy/config.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/qsgy/workspace/qsgy/qsgy/config.cc -o CMakeFiles/qsgy.dir/qsgy/config.cc.s
 
 # Object files for target qsgy
 qsgy_OBJECTS = \
