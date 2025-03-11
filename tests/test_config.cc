@@ -180,7 +180,7 @@ void test_class(){
 	XX_PM(g_person_map, "class.map before");
 	QSGY_LOG_INFO(QSGY_LOG_ROOT()) << g_person_vec_map->toString();
 
-	g_person->addListener(10, [](const Person old_value, const Person new_value){
+	g_person->addListener([](const Person old_value, const Person new_value){
 		QSGY_LOG_INFO(QSGY_LOG_ROOT()) << "old_value: " << old_value.toString() << " after: " << new_value.toString();
 	});
 
@@ -215,5 +215,13 @@ int main(int arg, char** args) {
 //	test_yaml();
 //	test_class();
 	test_log();
+	qsgy::Config::Visit([](qsgy::ConfigVarBase::ptr var) {
+		QSGY_LOG_INFO(QSGY_LOG_ROOT()) << "name=" << var->getName()
+				   << " description=" << var->getDescription()
+				   << " typename=" << var->getTypeName()
+				   << " value=" << var->toString();
+	});
+
+
 	return 0;
 }

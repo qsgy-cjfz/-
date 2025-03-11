@@ -96,7 +96,6 @@ test_config_EXTERNAL_OBJECTS =
 /home/qsgy/workspace/qsgy/bin/test_config: CMakeFiles/test_config.dir/tests/test_config.cc.o
 /home/qsgy/workspace/qsgy/bin/test_config: CMakeFiles/test_config.dir/build.make
 /home/qsgy/workspace/qsgy/bin/test_config: /home/qsgy/workspace/qsgy/lib/libqsgy.so
-/home/qsgy/workspace/qsgy/bin/test_config: /usr/local/lib/libyaml-cpp.a
 /home/qsgy/workspace/qsgy/bin/test_config: CMakeFiles/test_config.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/qsgy/workspace/qsgy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/qsgy/workspace/qsgy/bin/test_config"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_config.dir/link.txt --verbose=$(VERBOSE)

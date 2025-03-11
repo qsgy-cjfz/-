@@ -158,6 +158,19 @@ test_config/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/build
 .PHONY : test_config/fast
 
+#=============================================================================
+# Target rules for targets named test_thread
+
+# Build rule for target.
+test_thread: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_thread
+.PHONY : test_thread
+
+# fast build rule for target.
+test_thread/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/build
+.PHONY : test_thread/fast
+
 qsgy/config.o: qsgy/config.cc.o
 .PHONY : qsgy/config.o
 
@@ -205,6 +218,30 @@ qsgy/log.s: qsgy/log.cc.s
 qsgy/log.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qsgy.dir/build.make CMakeFiles/qsgy.dir/qsgy/log.cc.s
 .PHONY : qsgy/log.cc.s
+
+qsgy/thread.o: qsgy/thread.cc.o
+.PHONY : qsgy/thread.o
+
+# target to build an object file
+qsgy/thread.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qsgy.dir/build.make CMakeFiles/qsgy.dir/qsgy/thread.cc.o
+.PHONY : qsgy/thread.cc.o
+
+qsgy/thread.i: qsgy/thread.cc.i
+.PHONY : qsgy/thread.i
+
+# target to preprocess a source file
+qsgy/thread.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qsgy.dir/build.make CMakeFiles/qsgy.dir/qsgy/thread.cc.i
+.PHONY : qsgy/thread.cc.i
+
+qsgy/thread.s: qsgy/thread.cc.s
+.PHONY : qsgy/thread.s
+
+# target to generate assembly for a file
+qsgy/thread.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qsgy.dir/build.make CMakeFiles/qsgy.dir/qsgy/thread.cc.s
+.PHONY : qsgy/thread.cc.s
 
 qsgy/util.o: qsgy/util.cc.o
 .PHONY : qsgy/util.o
@@ -278,6 +315,30 @@ tests/test_config.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/tests/test_config.cc.s
 .PHONY : tests/test_config.cc.s
 
+tests/test_thread.o: tests/test_thread.cc.o
+.PHONY : tests/test_thread.o
+
+# target to build an object file
+tests/test_thread.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/tests/test_thread.cc.o
+.PHONY : tests/test_thread.cc.o
+
+tests/test_thread.i: tests/test_thread.cc.i
+.PHONY : tests/test_thread.i
+
+# target to preprocess a source file
+tests/test_thread.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/tests/test_thread.cc.i
+.PHONY : tests/test_thread.cc.i
+
+tests/test_thread.s: tests/test_thread.cc.s
+.PHONY : tests/test_thread.s
+
+# target to generate assembly for a file
+tests/test_thread.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/tests/test_thread.cc.s
+.PHONY : tests/test_thread.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -289,12 +350,16 @@ help:
 	@echo "... qsgy"
 	@echo "... test"
 	@echo "... test_config"
+	@echo "... test_thread"
 	@echo "... qsgy/config.o"
 	@echo "... qsgy/config.i"
 	@echo "... qsgy/config.s"
 	@echo "... qsgy/log.o"
 	@echo "... qsgy/log.i"
 	@echo "... qsgy/log.s"
+	@echo "... qsgy/thread.o"
+	@echo "... qsgy/thread.i"
+	@echo "... qsgy/thread.s"
 	@echo "... qsgy/util.o"
 	@echo "... qsgy/util.i"
 	@echo "... qsgy/util.s"
@@ -304,6 +369,9 @@ help:
 	@echo "... tests/test_config.o"
 	@echo "... tests/test_config.i"
 	@echo "... tests/test_config.s"
+	@echo "... tests/test_thread.o"
+	@echo "... tests/test_thread.i"
+	@echo "... tests/test_thread.s"
 .PHONY : help
 
 

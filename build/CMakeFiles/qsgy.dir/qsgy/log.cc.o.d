@@ -198,8 +198,16 @@ CMakeFiles/qsgy.dir/qsgy/log.cc.o: /home/qsgy/workspace/qsgy/qsgy/log.cc \
  /usr/include/x86_64-linux-gnu/bits/unistd-decl.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /home/qsgy/workspace/qsgy/qsgy/singleton.h /usr/include/c++/13/iostream \
+ /home/qsgy/workspace/qsgy/qsgy/singleton.h \
+ /home/qsgy/workspace/qsgy/qsgy/thread.h /usr/include/c++/13/thread \
+ /usr/include/c++/13/bits/std_thread.h \
+ /usr/include/c++/13/bits/this_thread_sleep.h \
+ /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
+ /usr/include/c++/13/cstdint /usr/include/c++/13/limits \
+ /usr/include/c++/13/ctime /usr/include/c++/13/bits/parse_numbers.h \
  /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
+ /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /usr/include/c++/13/atomic /usr/include/c++/13/iostream \
  /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
@@ -476,8 +484,8 @@ CMakeFiles/qsgy.dir/qsgy/log.cc.o: /home/qsgy/workspace/qsgy/qsgy/log.cc \
  /usr/include/boost/preprocessor/seq/limits/enum_256.hpp \
  /usr/include/boost/concept/detail/concept_undef.hpp \
  /usr/include/boost/iterator/iterator_concepts.hpp \
- /usr/include/boost/limits.hpp /usr/include/c++/13/limits \
- /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
+ /usr/include/boost/limits.hpp /usr/include/c++/13/algorithm \
+ /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
@@ -609,7 +617,7 @@ CMakeFiles/qsgy.dir/qsgy/log.cc.o: /home/qsgy/workspace/qsgy/qsgy/log.cc \
  /usr/include/boost/move/detail/std_ns_end.hpp \
  /usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp \
  /usr/include/boost/core/snprintf.hpp /usr/include/c++/13/locale \
- /usr/include/c++/13/bits/locale_facets_nonio.h /usr/include/c++/13/ctime \
+ /usr/include/c++/13/bits/locale_facets_nonio.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/13/bits/locale_facets_nonio.tcc \
@@ -648,7 +656,7 @@ CMakeFiles/qsgy.dir/qsgy/log.cc.o: /home/qsgy/workspace/qsgy/qsgy/log.cc \
  /usr/local/include/yaml-cpp/node/detail/node_iterator.h \
  /usr/local/include/yaml-cpp/node/iterator.h \
  /usr/local/include/yaml-cpp/node/detail/iterator.h \
- /usr/include/c++/13/atomic /usr/local/include/yaml-cpp/node/convert.h \
+ /usr/local/include/yaml-cpp/node/convert.h \
  /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \
  /usr/include/c++/13/bits/hashtable.h \
@@ -666,5 +674,5 @@ CMakeFiles/qsgy.dir/qsgy/log.cc.o: /home/qsgy/workspace/qsgy/qsgy/log.cc \
  /usr/local/include/yaml-cpp/node/detail/impl.h \
  /usr/local/include/yaml-cpp/node/parse.h \
  /usr/local/include/yaml-cpp/node/emit.h \
- /home/qsgy/workspace/qsgy/./qsgy/log.h /usr/include/c++/13/unordered_set \
+ /usr/include/c++/13/unordered_set \
  /usr/include/c++/13/bits/unordered_set.h

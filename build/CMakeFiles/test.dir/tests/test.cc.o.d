@@ -198,4 +198,13 @@ CMakeFiles/test.dir/tests/test.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
  /home/qsgy/workspace/qsgy/tests/../qsgy/singleton.h \
+ /home/qsgy/workspace/qsgy/tests/../qsgy/thread.h \
+ /usr/include/c++/13/thread /usr/include/c++/13/bits/std_thread.h \
+ /usr/include/c++/13/bits/this_thread_sleep.h \
+ /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
+ /usr/include/c++/13/cstdint /usr/include/c++/13/limits \
+ /usr/include/c++/13/ctime /usr/include/c++/13/bits/parse_numbers.h \
+ /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
+ /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /usr/include/c++/13/atomic \
  /home/qsgy/workspace/qsgy/tests/../qsgy/util.h

@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/qsgy.dir/qsgy/config.cc.o.d"
   "CMakeFiles/qsgy.dir/qsgy/log.cc.o"
   "CMakeFiles/qsgy.dir/qsgy/log.cc.o.d"
+  "CMakeFiles/qsgy.dir/qsgy/thread.cc.o"
+  "CMakeFiles/qsgy.dir/qsgy/thread.cc.o.d"
   "CMakeFiles/qsgy.dir/qsgy/util.cc.o"
   "CMakeFiles/qsgy.dir/qsgy/util.cc.o.d"
 )

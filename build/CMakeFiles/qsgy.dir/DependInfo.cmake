@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/qsgy/workspace/qsgy/qsgy/config.cc" "CMakeFiles/qsgy.dir/qsgy/config.cc.o" "gcc" "CMakeFiles/qsgy.dir/qsgy/config.cc.o.d"
   "/home/qsgy/workspace/qsgy/qsgy/log.cc" "CMakeFiles/qsgy.dir/qsgy/log.cc.o" "gcc" "CMakeFiles/qsgy.dir/qsgy/log.cc.o.d"
+  "/home/qsgy/workspace/qsgy/qsgy/thread.cc" "CMakeFiles/qsgy.dir/qsgy/thread.cc.o" "gcc" "CMakeFiles/qsgy.dir/qsgy/thread.cc.o.d"
   "/home/qsgy/workspace/qsgy/qsgy/util.cc" "CMakeFiles/qsgy.dir/qsgy/util.cc.o" "gcc" "CMakeFiles/qsgy.dir/qsgy/util.cc.o.d"
   )
 

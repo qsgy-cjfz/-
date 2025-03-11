@@ -14,3 +14,5 @@ CXX_FLAGS =  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unus
 
 # Custom defines: CMakeFiles/qsgy.dir/qsgy/config.cc.o_DEFINES = __FILE__="qsgy/config.cc"
 
+# Custom defines: CMakeFiles/qsgy.dir/qsgy/thread.cc.o_DEFINES = __FILE__="qsgy/thread.cc"
+

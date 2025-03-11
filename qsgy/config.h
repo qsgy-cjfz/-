@@ -6,7 +6,6 @@
 #include <sstream>
 #include <boost/lexical_cast.hpp>
 #include <yaml-cpp/yaml.h>
-#include "qsgy/log.h"
 #include <vector>
 #include <map>
 #include <list>
@@ -14,6 +13,9 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <functional>
+
+#include "thread.h"
+#include "log.h"
 
 namespace qsgy {
 
@@ -238,6 +240,7 @@ template<class T, class FromStr = LexicalCast<std::string, T>
 				, class ToStr = LexicalCast<T, std::string> >
 class ConfigVar : public ConfigVarBase {
 public:
+	typedef RWMutex RWMutexType;
 	typedef std::shared_ptr<ConfigVar> ptr;
 	typedef std::function<void(const T& old_value, const T& new_value)> on_change_cb;	/*这个typedef语句定义了一个名为on_change_cb的类型别名，它表示一个接受两个const T&类型参数并返回void的函数类型。这种类型别名通常用于定义回调函数，使得代码更加简洁和易读。*/
 
@@ -251,6 +254,7 @@ public:
 	std::string toString() override {
 		try {
 			//return boost::lexical_cast<std::string>(m_val);
+			RWMutexType::ReadLock lock(m_mutex);
 			return ToStr()(m_val);
 		} catch (std::exception& e) {
 			QSGY_LOG_ERROR(QSGY_LOG_ROOT()) << "ConfigVar::soString exception"
@@ -258,6 +262,7 @@ public:
 		}
 		return "";
 	}
+
 	bool fromString(const std::string& val) override{
 		try {
 			//m_val = boost::lexical_cast<T>(val);
@@ -269,37 +274,53 @@ public:
 		}
 		return false;
 	}
-	const T getValue() const {return m_val;}
+
+	const T getValue() {
+		RWMutexType::ReadLock lock(m_mutex);
+		return m_val;
+	}
 	
 	void setValue(const T& val) {
-		if(m_val == val) {
-			return;
+		{
+			RWMutexType::ReadLock lock(m_mutex);
+			if(m_val == val) {
+				return;
+			}
+			for(auto& i : m_cbs) {
+				i.second(m_val, val);
+			}
 		}
-		for(auto i : m_cbs) {
-			i.second(m_val, val);
-		}
+		RWMutexType::WriteLock lock(m_mutex);
 		m_val = val;
 	}
 	
 	std::string getTypeName() const override { return typeid(T).name();}
 
-	void addListener(uint64_t key, on_change_cb cb) {
-		m_cbs[key] = cb;
+	uint64_t addListener(on_change_cb cb) {
+		static uint64_t s_fun_id = 0;
+		RWMutexType::WriteLock lock(m_mutex);
+		++s_fun_id;
+		m_cbs[s_fun_id] = cb;
+		return s_fun_id;
 	}
 
 	void delListener(uint64_t key) {
+		RWMutexType::WriteLock lock(m_mutex);
 		m_cbs.erase(key);
 	}
 
 	on_change_cb getListener(uint64_t key) {
+		RWMutexType::ReadLock lock(m_mutex);
 		auto it = m_cbs.find(key);
 		return it == m_cbs.end() ? nullptr : it->second;
 	}
 
 	void clearListener() {
+		RWMutexType::WriteLock lock(m_mutex);
 		m_cbs.clear();
 	}
 private:
+	RWMutexType m_mutex;
 	T m_val;
 	//变更回调函数组,uint64_t key,要求唯一，一般可以用hash
 	std::map<uint64_t, on_change_cb> m_cbs;
@@ -308,10 +329,12 @@ private:
 class Config {
 public:
 	typedef std::map<std::string, ConfigVarBase::ptr> ConfigVarMap;
+	typedef RWMutex RWMutexType;
 
 	template<class T>
 	static typename ConfigVar<T>::ptr Lookup(const std::string& name, 
 			const T& default_value, const std::string& description = ""){
+			RWMutexType::WriteLock lock(GetMutex());
 		auto it = GetDatas().find(name);
 		if(it !=GetDatas().end()) {
 			auto tmp = std::dynamic_pointer_cast<ConfigVar<T> >(it->second);	//将找到的配置变量转换为 ConfigVar<T> 类型的智能指针。
@@ -320,7 +343,8 @@ public:
 				return tmp;
 			} else {
 				QSGY_LOG_ERROR(QSGY_LOG_ROOT()) << "Lookup name = " << name << " exits but type not "
-					<< typeid(T).name() << " real_type =" << it->second->getTypeName() << " " << it->second->toString();
+					<< typeid(T).name() << " real_type =" << it->second->getTypeName() 
+					<< " " << it->second->toString();
 				return nullptr;
 			}
 		}
@@ -330,25 +354,35 @@ public:
 			QSGY_LOG_ERROR(QSGY_LOG_ROOT()) << "Lookup name invalid " << name;
 			throw std::invalid_argument(name);
 		}
+		
 		typename ConfigVar<T>::ptr v(new ConfigVar<T>(name, default_value, description));
 		GetDatas()[name] = v;
 		return v;
 	}
 
 	template<class T>
-		static typename ConfigVar<T>::ptr Lookup(const std::string& name) {
-			auto it = GetDatas().find(name);
-			if(it == GetDatas().end()) {
-				return nullptr;
-			}
-			return std::dynamic_pointer_cast<ConfigVar<T> >(it->second); 
+	static typename ConfigVar<T>::ptr Lookup(const std::string& name) {
+		RWMutexType::ReadLock lock(GetMutex());
+		auto it = GetDatas().find(name);
+		if(it == GetDatas().end()) {
+			return nullptr;
 		}
+		return std::dynamic_pointer_cast<ConfigVar<T> >(it->second); 
+	}
+
 	static void LoadFromYaml(const YAML::Node& root);
 	static ConfigVarBase::ptr LookupBase(const std::string& name);
+
+	static void Visit(std::function<void(ConfigVarBase::ptr)> cb);
 private:
 	static ConfigVarMap& GetDatas() {
 		static ConfigVarMap s_datas;
 		return s_datas;
+	}
+
+	static RWMutexType& GetMutex() {
+		static RWMutexType s_mutex;
+		return s_mutex;
 	}
 };
 

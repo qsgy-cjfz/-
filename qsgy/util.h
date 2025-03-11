@@ -9,8 +9,10 @@
 #include <stdint.h>
 
 namespace qsgy {
+
 pid_t GetThreadId();
 uint32_t GetFiberId();
+
 }
 
 #endif
