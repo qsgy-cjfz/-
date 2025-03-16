@@ -6,7 +6,7 @@ CXX_DEFINES = -Dqsgy_EXPORTS
 
 CXX_INCLUDES = -I/home/qsgy/workspace/qsgy/.
 
-CXX_FLAGS =  -rdynamic -O3 -g -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -fPIC
+CXX_FLAGS =  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -fPIC
 
 # Custom defines: CMakeFiles/qsgy.dir/qsgy/log.cc.o_DEFINES = __FILE__="qsgy/log.cc"
 

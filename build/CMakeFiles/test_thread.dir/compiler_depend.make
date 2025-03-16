@@ -4,6 +4,7 @@
 CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tests/test_thread.cc \
   /home/qsgy/workspace/qsgy/qsgy/config.h \
   /home/qsgy/workspace/qsgy/qsgy/log.h \
+  /home/qsgy/workspace/qsgy/qsgy/macro.h \
   /home/qsgy/workspace/qsgy/qsgy/qsgy.h \
   /home/qsgy/workspace/qsgy/qsgy/singleton.h \
   /home/qsgy/workspace/qsgy/qsgy/thread.h \
@@ -644,23 +645,14 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/select-decl.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/semaphore.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
-  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
-  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/syscall.h \
@@ -697,14 +689,10 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd-decl.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
@@ -807,21 +795,19 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h:
 
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
+
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
-/usr/include/x86_64-linux-gnu/bits/wchar2.h:
-
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
-/usr/include/x86_64-linux-gnu/bits/unistd-decl.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
@@ -859,8 +845,6 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
 
 /usr/include/x86_64-linux-gnu/bits/syscall.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdio2-decl.h:
-
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
@@ -868,10 +852,6 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/include/x86_64-linux-gnu/bits/semaphore.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
-
-/usr/include/x86_64-linux-gnu/bits/select-decl.h:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
@@ -916,8 +896,6 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/include/x86_64-linux-gnu/asm/unistd_64.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio.h:
 
 /usr/include/x86_64-linux-gnu/asm/unistd.h:
 
@@ -1007,8 +985,6 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
 
 /usr/include/c++/13/ios:
 
-/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
-
 /usr/include/c++/13/initializer_list:
 
 /usr/include/c++/13/functional:
@@ -1095,8 +1071,6 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
 
 /usr/include/boost/mpl/void.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/unistd.h:
-
 /usr/include/boost/numeric/conversion/detail/meta.hpp:
 
 /usr/include/boost/mpl/aux_/config/ctps.hpp:
@@ -1137,9 +1111,9 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
 
 /usr/include/boost/mpl/placeholders.hpp:
 
-/usr/include/boost/iterator/detail/config_undef.hpp:
-
 /usr/include/assert.h:
+
+/usr/include/boost/iterator/detail/config_undef.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
@@ -1160,8 +1134,6 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
 /usr/include/boost/mpl/aux_/value_wknd.hpp:
 
 /usr/include/boost/mpl/aux_/config/use_preprocessed.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
@@ -1251,29 +1223,17 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
 
 /usr/include/boost/mpl/aux_/has_apply.hpp:
 
-/usr/local/include/yaml-cpp/node/parse.h:
+/usr/include/boost/mpl/aux_/config/workaround.hpp:
 
-/usr/include/boost/mpl/aux_/config/gcc.hpp:
+/usr/include/boost/core/addressof.hpp:
 
-/usr/include/boost/mpl/aux_/config/ttp.hpp:
+/usr/include/boost/mpl/aux_/common_name_wknd.hpp:
+
+/usr/include/boost/mpl/int.hpp:
+
+/usr/include/boost/preprocessor/seq/limits/enum_256.hpp:
 
 /usr/include/boost/integer_traits.hpp:
-
-/usr/include/boost/type_traits/is_complete.hpp:
-
-/usr/include/boost/preprocessor/detail/auto_rec.hpp:
-
-/usr/include/boost/range/distance.hpp:
-
-/usr/include/boost/preprocessor/comparison/less_equal.hpp:
-
-/usr/include/boost/mpl/aux_/full_lambda.hpp:
-
-/usr/include/boost/integer.hpp:
-
-/usr/include/boost/core/checked_delete.hpp:
-
-/usr/include/boost/preprocessor/punctuation/comma_if.hpp:
 
 /usr/include/unistd.h:
 
@@ -1347,16 +1307,6 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
 
 /usr/include/boost/iterator/iterator_concepts.hpp:
 
-/usr/include/boost/mpl/aux_/config/workaround.hpp:
-
-/usr/include/boost/core/addressof.hpp:
-
-/usr/include/boost/mpl/aux_/common_name_wknd.hpp:
-
-/usr/include/boost/mpl/int.hpp:
-
-/usr/include/boost/preprocessor/seq/limits/enum_256.hpp:
-
 /usr/local/include/yaml-cpp/yaml.h:
 
 /usr/include/boost/mpl/limits/arity.hpp:
@@ -1393,6 +1343,18 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
 
 /usr/include/boost/preprocessor/variadic/size.hpp:
 
+/usr/include/boost/core/checked_delete.hpp:
+
+/usr/include/boost/preprocessor/punctuation/comma_if.hpp:
+
+/usr/include/boost/preprocessor/comparison/less_equal.hpp:
+
+/home/qsgy/workspace/qsgy/qsgy/macro.h:
+
+/usr/include/boost/mpl/aux_/full_lambda.hpp:
+
+/usr/include/boost/integer.hpp:
+
 /usr/include/boost/preprocessor/control/deduce_d.hpp:
 
 /usr/include/boost/mpl/aux_/config/overload_resolution.hpp:
@@ -1417,45 +1379,29 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
 
 /usr/include/c++/13/bits/stl_raw_storage_iter.h:
 
+/usr/local/include/yaml-cpp/binary.h:
+
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/boost/mpl/aux_/yes_no.hpp:
+
+/usr/include/boost/preprocessor/logical/limits/bool_256.hpp:
+
+/usr/include/boost/preprocessor/arithmetic/detail/maximum_number.hpp:
+
+/usr/include/c++/13/bits/parse_numbers.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/quote.hpp:
+
+/usr/include/c++/13/bits/std_abs.h:
+
+/usr/include/boost/mpl/aux_/config/compiler.hpp:
+
 /usr/include/c++/13/limits:
 
 /usr/include/boost/mpl/arg_fwd.hpp:
-
-/usr/include/boost/lexical_cast.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/apply.hpp:
-
-/usr/include/boost/mpl/aux_/is_msvc_eti_arg.hpp:
-
-/home/qsgy/workspace/qsgy/qsgy/qsgy.h:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/home/qsgy/workspace/qsgy/tests/test_thread.cc:
-
-/home/qsgy/workspace/qsgy/qsgy/util.h:
-
-/usr/include/boost/preprocessor/array/size.hpp:
-
-/usr/include/boost/numeric/conversion/detail/bounds.hpp:
-
-/usr/include/boost/range/concepts.hpp:
-
-/usr/include/boost/iterator/iterator_traits.hpp:
-
-/usr/include/c++/13/cmath:
-
-/usr/include/boost/assert/source_location.hpp:
-
-/usr/include/boost/preprocessor/debug/error.hpp:
-
-/usr/local/include/yaml-cpp/node/emit.h:
-
-/usr/include/c++/13/bits/refwrap.h:
-
-/usr/include/boost/detail/select_type.hpp:
-
-/usr/include/boost/mpl/aux_/lambda_support.hpp:
 
 /usr/local/include/yaml-cpp/traits.h:
 
@@ -1483,9 +1429,51 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
 
 /usr/include/boost/preprocessor/logical/bitor.hpp:
 
-/usr/include/boost/mpl/aux_/arithmetic_op.hpp:
+/home/qsgy/workspace/qsgy/qsgy/qsgy.h:
+
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/home/qsgy/workspace/qsgy/tests/test_thread.cc:
+
+/home/qsgy/workspace/qsgy/qsgy/util.h:
+
+/usr/include/boost/preprocessor/array/size.hpp:
+
+/usr/include/boost/numeric/conversion/detail/bounds.hpp:
+
+/usr/include/boost/range/concepts.hpp:
+
+/usr/include/boost/iterator/iterator_traits.hpp:
+
+/usr/include/c++/13/cmath:
 
 /usr/include/boost/type_traits/is_const.hpp:
+
+/usr/include/boost/mpl/aux_/arithmetic_op.hpp:
+
+/usr/include/boost/assert/source_location.hpp:
+
+/usr/include/boost/lexical_cast.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/apply.hpp:
+
+/usr/include/boost/mpl/aux_/is_msvc_eti_arg.hpp:
+
+/usr/include/boost/preprocessor/debug/error.hpp:
+
+/usr/local/include/yaml-cpp/node/node.h:
+
+/usr/include/boost/config/detail/select_stdlib_config.hpp:
+
+/usr/include/boost/mpl/equal_to.hpp:
+
+/usr/local/include/yaml-cpp/node/emit.h:
+
+/usr/include/c++/13/bits/refwrap.h:
+
+/usr/include/boost/detail/select_type.hpp:
+
+/usr/include/boost/mpl/aux_/lambda_support.hpp:
 
 /usr/include/boost/concept_check.hpp:
 
@@ -1539,34 +1527,6 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
 
 /usr/include/boost/mpl/aux_/config/eti.hpp:
 
-/usr/include/boost/preprocessor/arithmetic/detail/maximum_number.hpp:
-
-/usr/include/c++/13/bits/parse_numbers.h:
-
-/usr/include/x86_64-linux-gnu/bits/wchar2-decl.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/quote.hpp:
-
-/usr/include/c++/13/bits/std_abs.h:
-
-/usr/local/include/yaml-cpp/node/node.h:
-
-/usr/include/boost/mpl/equal_to.hpp:
-
-/usr/include/boost/config/detail/select_stdlib_config.hpp:
-
-/usr/local/include/yaml-cpp/binary.h:
-
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
-/usr/include/boost/mpl/aux_/yes_no.hpp:
-
-/usr/include/boost/preprocessor/logical/limits/bool_256.hpp:
-
-/usr/include/boost/mpl/aux_/config/compiler.hpp:
-
 /usr/include/boost/concept/detail/backward_compatibility.hpp:
 
 /usr/include/c++/13/algorithm:
@@ -1584,6 +1544,12 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
 /usr/include/boost/next_prior.hpp:
 
 /usr/include/boost/type_traits/add_lvalue_reference.hpp:
+
+/usr/include/boost/mpl/aux_/config/ttp.hpp:
+
+/usr/local/include/yaml-cpp/node/parse.h:
+
+/usr/include/boost/mpl/aux_/config/gcc.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
@@ -1674,8 +1640,6 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
 /usr/include/boost/mpl/aux_/config/intel.hpp:
 
 /usr/include/boost/preprocessor/arithmetic/dec.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/stdio2.h:
 
 /usr/include/c++/13/bits/unordered_set.h:
 
@@ -1769,6 +1733,12 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
 
 /usr/include/c++/13/bits/valarray_before.h:
 
+/usr/include/boost/type_traits/is_complete.hpp:
+
+/usr/include/boost/preprocessor/detail/auto_rec.hpp:
+
+/usr/include/boost/range/distance.hpp:
+
 /usr/include/boost/preprocessor/detail/check.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
@@ -1785,6 +1755,10 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
 
 /usr/include/boost/preprocessor/detail/limits/auto_rec_256.hpp:
 
+/usr/include/c++/13/cwchar:
+
+/usr/include/boost/preprocessor/empty.hpp:
+
 /usr/include/boost/preprocessor/inc.hpp:
 
 /usr/include/boost/preprocessor/list/detail/fold_left.hpp:
@@ -1792,8 +1766,6 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
 /usr/include/c++/13/bits/localefwd.h:
 
 /usr/include/boost/range/size_type.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
 
 /usr/include/boost/preprocessor/list/detail/limits/fold_right_256.hpp:
 
@@ -1967,8 +1939,6 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
 
 /usr/include/boost/throw_exception.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/select2.h:
-
 /usr/include/boost/utility/enable_if.hpp:
 
 /usr/include/boost/type_traits/add_const.hpp:
@@ -2020,8 +1990,6 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
 /usr/include/boost/type_traits/has_minus_assign.hpp:
 
 /usr/include/boost/type_traits/has_plus.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
@@ -2296,7 +2264,3 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: /home/qsgy/workspace/qsgy/tes
 /usr/include/boost/mpl/aux_/config/has_apply.hpp:
 
 /usr/include/c++/13/cstdlib:
-
-/usr/include/boost/preprocessor/empty.hpp:
-
-/usr/include/c++/13/cwchar:
