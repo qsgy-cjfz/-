@@ -8,11 +8,13 @@ CXX_INCLUDES = -I/home/qsgy/workspace/qsgy/.
 
 CXX_FLAGS =  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -fPIC
 
-# Custom defines: CMakeFiles/qsgy.dir/qsgy/log.cc.o_DEFINES = __FILE__="qsgy/log.cc"
-
-# Custom defines: CMakeFiles/qsgy.dir/qsgy/util.cc.o_DEFINES = __FILE__="qsgy/util.cc"
-
 # Custom defines: CMakeFiles/qsgy.dir/qsgy/config.cc.o_DEFINES = __FILE__="qsgy/config.cc"
 
+# Custom defines: CMakeFiles/qsgy.dir/qsgy/fiber.cc.o_DEFINES = __FILE__="qsgy/fiber.cc"
+
+# Custom defines: CMakeFiles/qsgy.dir/qsgy/log.cc.o_DEFINES = __FILE__="qsgy/log.cc"
+
 # Custom defines: CMakeFiles/qsgy.dir/qsgy/thread.cc.o_DEFINES = __FILE__="qsgy/thread.cc"
+
+# Custom defines: CMakeFiles/qsgy.dir/qsgy/util.cc.o_DEFINES = __FILE__="qsgy/util.cc"
 

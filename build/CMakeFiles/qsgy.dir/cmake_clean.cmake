@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "/home/qsgy/workspace/qsgy/lib/libqsgy.so"
   "CMakeFiles/qsgy.dir/qsgy/config.cc.o"
   "CMakeFiles/qsgy.dir/qsgy/config.cc.o.d"
+  "CMakeFiles/qsgy.dir/qsgy/fiber.cc.o"
+  "CMakeFiles/qsgy.dir/qsgy/fiber.cc.o.d"
   "CMakeFiles/qsgy.dir/qsgy/log.cc.o"
   "CMakeFiles/qsgy.dir/qsgy/log.cc.o.d"
   "CMakeFiles/qsgy.dir/qsgy/thread.cc.o"

@@ -184,6 +184,19 @@ test_util/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/build
 .PHONY : test_util/fast
 
+#=============================================================================
+# Target rules for targets named test_fiber
+
+# Build rule for target.
+test_fiber: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_fiber
+.PHONY : test_fiber
+
+# fast build rule for target.
+test_fiber/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/build
+.PHONY : test_fiber/fast
+
 qsgy/config.o: qsgy/config.cc.o
 .PHONY : qsgy/config.o
 
@@ -207,6 +220,30 @@ qsgy/config.s: qsgy/config.cc.s
 qsgy/config.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qsgy.dir/build.make CMakeFiles/qsgy.dir/qsgy/config.cc.s
 .PHONY : qsgy/config.cc.s
+
+qsgy/fiber.o: qsgy/fiber.cc.o
+.PHONY : qsgy/fiber.o
+
+# target to build an object file
+qsgy/fiber.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qsgy.dir/build.make CMakeFiles/qsgy.dir/qsgy/fiber.cc.o
+.PHONY : qsgy/fiber.cc.o
+
+qsgy/fiber.i: qsgy/fiber.cc.i
+.PHONY : qsgy/fiber.i
+
+# target to preprocess a source file
+qsgy/fiber.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qsgy.dir/build.make CMakeFiles/qsgy.dir/qsgy/fiber.cc.i
+.PHONY : qsgy/fiber.cc.i
+
+qsgy/fiber.s: qsgy/fiber.cc.s
+.PHONY : qsgy/fiber.s
+
+# target to generate assembly for a file
+qsgy/fiber.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qsgy.dir/build.make CMakeFiles/qsgy.dir/qsgy/fiber.cc.s
+.PHONY : qsgy/fiber.cc.s
 
 qsgy/log.o: qsgy/log.cc.o
 .PHONY : qsgy/log.o
@@ -328,6 +365,30 @@ tests/test_config.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/tests/test_config.cc.s
 .PHONY : tests/test_config.cc.s
 
+tests/test_fiber.o: tests/test_fiber.cc.o
+.PHONY : tests/test_fiber.o
+
+# target to build an object file
+tests/test_fiber.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o
+.PHONY : tests/test_fiber.cc.o
+
+tests/test_fiber.i: tests/test_fiber.cc.i
+.PHONY : tests/test_fiber.i
+
+# target to preprocess a source file
+tests/test_fiber.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/tests/test_fiber.cc.i
+.PHONY : tests/test_fiber.cc.i
+
+tests/test_fiber.s: tests/test_fiber.cc.s
+.PHONY : tests/test_fiber.s
+
+# target to generate assembly for a file
+tests/test_fiber.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/tests/test_fiber.cc.s
+.PHONY : tests/test_fiber.cc.s
+
 tests/test_thread.o: tests/test_thread.cc.o
 .PHONY : tests/test_thread.o
 
@@ -387,11 +448,15 @@ help:
 	@echo "... qsgy"
 	@echo "... test"
 	@echo "... test_config"
+	@echo "... test_fiber"
 	@echo "... test_thread"
 	@echo "... test_util"
 	@echo "... qsgy/config.o"
 	@echo "... qsgy/config.i"
 	@echo "... qsgy/config.s"
+	@echo "... qsgy/fiber.o"
+	@echo "... qsgy/fiber.i"
+	@echo "... qsgy/fiber.s"
 	@echo "... qsgy/log.o"
 	@echo "... qsgy/log.i"
 	@echo "... qsgy/log.s"
@@ -407,6 +472,9 @@ help:
 	@echo "... tests/test_config.o"
 	@echo "... tests/test_config.i"
 	@echo "... tests/test_config.s"
+	@echo "... tests/test_fiber.o"
+	@echo "... tests/test_fiber.i"
+	@echo "... tests/test_fiber.s"
 	@echo "... tests/test_thread.o"
 	@echo "... tests/test_thread.i"
 	@echo "... tests/test_thread.s"
