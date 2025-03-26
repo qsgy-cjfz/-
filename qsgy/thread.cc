@@ -9,6 +9,7 @@ static thread_local std::string t_thread_name = "UNKNOW";
 
 static qsgy::Logger::ptr g_logger = QSGY_LOG_NAME("system");
 
+
 Semaphore::Semaphore(uint32_t count) {
 	if(sem_init(&m_semaphore, 0, count)) {
 		throw std::logic_error("sem_init error");
@@ -24,6 +25,7 @@ void Semaphore::wait() {
 		throw std::logic_error("sem_wait error");
 	}
 }
+
 void Semaphore::notify() {
 	if(sem_post(&m_semaphore)) {
 		throw std::logic_error("sem_post error");
@@ -39,13 +41,10 @@ const std::string& Thread::GetName() {
 }
 
 void Thread::SetName(const std::string& name) {
-	if(name.empty()) {
-		return;
-	}
 	if(t_thread) {
 		t_thread->m_name = name;
 	}
-	t_thread->m_name = name;
+	t_thread_name = name;
 }
 
 Thread::Thread(std::function<void()> cb, const std::string& name)

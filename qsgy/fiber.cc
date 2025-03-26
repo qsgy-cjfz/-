@@ -40,14 +40,15 @@ uint64_t Fiber::GetFiberId() {
 Fiber::Fiber() {
 	m_state = EXEC;
 	SetThis(this);
-
+	//显示设置主协程id为0
+	m_id = 0;
 	if(getcontext(&m_ctx)) {
 		QSGY_ASSERT2(false, "getcontext");
 	}
 
 	++s_fiber_count;
 
-	QSGY_LOG_DEBUG(g_logger) << "Fiber::Fiber";
+	QSGY_LOG_DEBUG(g_logger) << "Fiber::Fiber=" << m_id;
 }
 
 Fiber::Fiber(std::function<void()> cb, size_t stacksize)
@@ -86,7 +87,7 @@ Fiber::~Fiber() {
 			SetThis(nullptr);
 		}		
 	}
-	QSGY_LOG_DEBUG(g_logger) << "Fiber::Fiber id=" << m_id;
+	QSGY_LOG_DEBUG(g_logger) << "Fiber::~Fiber id=" << m_id;
 }
 
 //重置协程函数，并重置状态
@@ -176,6 +177,12 @@ void Fiber::MainFunc() {
 		cur->m_state = EXCEPT;
 		QSGY_LOG_ERROR(g_logger) << "Fiber Except";
 	}
+
+	auto raw_ptr = cur.get();
+	cur.reset();
+	raw_ptr->swapOut();
+	//永远不会再回到这里
+	QSGY_ASSERT2(false, "never reach");
 }
 
 }
