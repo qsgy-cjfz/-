@@ -4,5 +4,6 @@
 /home/qsgy/workspace/qsgy/build/CMakeFiles/test_thread.dir
 /home/qsgy/workspace/qsgy/build/CMakeFiles/test_util.dir
 /home/qsgy/workspace/qsgy/build/CMakeFiles/test_fiber.dir
+/home/qsgy/workspace/qsgy/build/CMakeFiles/test_scheduler.dir
 /home/qsgy/workspace/qsgy/build/CMakeFiles/edit_cache.dir
 /home/qsgy/workspace/qsgy/build/CMakeFiles/rebuild_cache.dir

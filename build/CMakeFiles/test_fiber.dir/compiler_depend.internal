@@ -8,6 +8,7 @@ CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o
  /home/qsgy/workspace/qsgy/qsgy/log.h
  /home/qsgy/workspace/qsgy/qsgy/macro.h
  /home/qsgy/workspace/qsgy/qsgy/qsgy.h
+ /home/qsgy/workspace/qsgy/qsgy/scheduler.h
  /home/qsgy/workspace/qsgy/qsgy/singleton.h
  /home/qsgy/workspace/qsgy/qsgy/thread.h
  /home/qsgy/workspace/qsgy/qsgy/util.h

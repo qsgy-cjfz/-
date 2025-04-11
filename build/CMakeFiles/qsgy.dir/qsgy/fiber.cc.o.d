@@ -666,4 +666,5 @@ CMakeFiles/qsgy.dir/qsgy/fiber.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/syscall.h \
  /home/qsgy/workspace/qsgy/qsgy/singleton.h \
  /home/qsgy/workspace/qsgy/qsgy/macro.h \
- /home/qsgy/workspace/qsgy/qsgy/util.h
+ /home/qsgy/workspace/qsgy/qsgy/util.h \
+ /home/qsgy/workspace/qsgy/qsgy/scheduler.h

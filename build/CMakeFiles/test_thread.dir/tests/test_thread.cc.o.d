@@ -667,4 +667,5 @@ CMakeFiles/test_thread.dir/tests/test_thread.cc.o: \
  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
  /home/qsgy/workspace/qsgy/./qsgy/macro.h \
- /home/qsgy/workspace/qsgy/./qsgy/util.h
+ /home/qsgy/workspace/qsgy/./qsgy/util.h \
+ /home/qsgy/workspace/qsgy/./qsgy/scheduler.h
